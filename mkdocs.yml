@@ -1,0 +1,59 @@
+site_name: 'TEM GeminiCenter documentation'
+site_url: "http://localhost:8000/" # replace with your website published path under which this documentation is published, eg. https://mysite.com/this_docs/ 
+dev_addr: "127.0.0.1:8000"
+use_directory_urls: true
+
+nav:
+  - 'HOME': 'index.md'
+  - 'Experimental workflows':
+    - 'Workflows/index.md'
+    - '4DSTEM': 'Workflows/4DSTEM.md'
+
+theme:
+  name: material
+  palette:
+    scheme: default
+  features:
+    - content.code.select
+    - content.tooltips
+    - content.code.copy
+    - content.code.annotate
+    - navigation.expand
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  #- git-revision-date # disabled in case of too many warnings "has no git logs, revision date defaulting to today's date" when some files were not added to commits
+  - search
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - sane_lists
+  - tables
+  - toc:
+      anchorlink: true
+      permalink: "#"
+      baselevel: 2
+      separator: "_"
