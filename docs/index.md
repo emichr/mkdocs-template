@@ -19,15 +19,31 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org){:target="_blan
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 ```
+## Logo
+Change the logo under `docs/assets/logo.svg` or remove the `logo` line in `mkdocs.yml` to remove the logo.
 
 ## Useful markdown syntax examples:
 
-### LINKS
+### Custom icons
+```
+my icon is :myicons-icon1:
+```
+My icon is :myicons-icon1:
+
+!!! important
+    If "serving" the documentation using `mkdocs serve`, remember to shutdown and reserve it after adding new icons!
+
+### Links
 
 ```
 Example of a [link](#){:target="_blank"}
 ```
 Example of a [link](#){:target="_blank"}
+
+```
+Example of a link to a page [my page](./Topic/index.md)
+```
+Example of a link to a page [my page](./Topic/index.md)
 _____
 
 ### Tab groups
